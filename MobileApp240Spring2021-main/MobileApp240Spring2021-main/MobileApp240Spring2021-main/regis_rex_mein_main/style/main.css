@@ -1,0 +1,141 @@
+html {background: #B9251f;}
+body {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;}
+.title {
+    color: #B9251f;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff0f6;
+    /*background-color: #14cd78;*/
+    border-radius: 20px;}
+h2 {
+    position: top;
+    color: #B9251f;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff0f6;
+    /*background-color: #14cd78;*/
+    border-radius: 20px;}
+form {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    line-height: inherit;
+    display: block;
+    /*background-color: #14cd78;*/}
+body form label {text-shadow: 1px 2px #030303;}
+body form input {
+    border-radius: .6em;}
+body form select {
+    border-radius: .6em;
+    font-size: .9em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    align-self: center;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #fff0f6;}
+.resultBtn {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 1em;
+    color: black;
+    background-color: #d9b525;
+    font-size: 1em;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: center;}
+.buttonBox{text-align: center;}
+.field1 {
+    color: #fff0f6;
+    font-size: .8em;
+    font-weight: bold;}
+footer {
+    margin-top: 80px;
+    background: #B9251f;
+    font-size: .6em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #121212;}
+footer a {
+    background: #B9251f;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #121212;
+    padding-right: 10px;}
+.abouttitle{
+    text-align: center;
+    color: #fff0f6;
+    font-size: 1em;}
+.aboutbox{
+    background-color: #fff0f6;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: .7em;}
+.licensebox{
+    background-color: #fff0f6;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: .7em;}
+.resModal{
+    z-index:3;
+    display:none;
+    padding-top:30px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.4);}
+.resModalHeader{
+    position: top;
+    color: #B9251f;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff0f6;}
+.resModalContent{
+    margin:auto;
+    background-color: #fff0f6;
+    position:relative;
+    padding:0;
+    outline:0;
+    width:95%;}
+.resModalFieldsContainer {
+    background-color: #fff0f6;}
+.resModalSpan{
+    font-size: .8em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    padding-left: 15px;
+    float: left;}
+.resModalLoadField{
+    font-size: .8em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: maroon;
+    padding-right: 15px;
+    float: right;}
+.resModalExit{
+    float:right;
+    color: black;
+    padding-right: 15px;}
+.resModalExit:hover{
+    color: orangered;
+    cursor: pointer;}
+.resModalFoot{
+    text-align: center;
+    position: relative;
+    background-color: silver;}
+@media all and (max-width: 1024px) {/*this code is for small screens (mobiles)*/
+    html {font-size: .9em;}
+    h1 a {visibility: hidden;}
+    .footer a {color: #d1d1d1;}
+    .resModalContent{width:90%;overflow-x: hidden;overflow-y: hidden;}
+    .resModal{padding-top:30px;}}

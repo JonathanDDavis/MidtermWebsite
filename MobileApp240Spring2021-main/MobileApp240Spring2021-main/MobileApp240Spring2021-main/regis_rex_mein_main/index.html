@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chow King - Find your new favorite place!</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<h1 class="title"><a style="font-size:.9em"> &#x1F961; </a>Chow King<a style="font-size:.9em"> &#127791; </a></h1>
+
+
+<body  onload="loadFoot()">
+    <form class="field1">
+        <label for="food_input">Food Type</label>
+    <br>
+        <select name="food" id="food">
+            <option value="hispanic">&#x1F32E; Hispanic</option>
+            <option value="burger">&#x1F354; Burgers</option>
+            <option value="pizza">&#x1F355;  Pizza</option>
+            <option value="sushi">&#x1F363; Sushi</option>
+            <option value="asian">&#x1F961; Asian</option>
+            <option value="italian">&#x1F35D; Italian</option>
+            <option value="bfast">&#x1F373; Breakfast</option>
+            <option value="seafood">&#x1F364; Seafood</option>
+            <option value="randomF">&#x2753;</option>
+        </select>
+    <br>
+        <label for="rest_input">Restaurant Type</label>
+    <br>
+        <select name="rest" id="rest">
+            <option value="qsr">&#x1F697; Quick</option>
+            <option value="sitdown">&#x1F37D; Seated</option>
+            <option value="upscale">&#x1F37E; Upscale</option>
+            <option value="randomR">&#x2753;</option>
+        </select>
+    <br>
+        <label for="price_input">Price Range</label>
+    <br>
+        <select name="price" id="price">
+            <option value="1dol">&#x1F4B2;</option>
+            <option value="2dol">&#x1F4B2;&#x1F4B2;</option>
+            <option value="3dol">&#x1F4B2;&#x1F4B2;&#x1F4B2;</option>
+            <option value="randomP">&#x2753;</option>
+        </select>
+    <br>
+        <label for="dist_input">Distance</label>
+    <br>
+        <select name="dist" id="dist">
+            <option value="less3">&#8810; 3 mi</option>
+            <option value="3to5">3 - 5 mi</option>
+            <option value="5to10">5 - 10 mi</option>
+            <option value="more10">10 &#8810; mi</option>
+            <option value="randomD">&#x2753;</option>
+        </select>
+</form>
+<div class="buttonBox">
+  <button onclick="document.getElementById('resultsModal').style.display='block'" class="resultBtn">ROLL!</button>
+</div>
+<div class="w3-container">
+  <div id="resultsModal" class="resModal">
+    <div class="resModalContent">
+      <header class="resModalHeader">
+        <span onclick="document.getElementById('resultsModal').style.display='none'"
+        class="resModalExit">&times;</span>
+        <h3>? Restaurant Name ?</h3>
+      </header>
+      <div class="resModalFieldsContainer">
+        <span class="resModalSpan">Restaurant Name:</span>
+        <div class="resModalLoadField">?restaurant name load</div><br>
+        <span class="resModalSpan">Distance from You:</span>
+        <div class="resModalLoadField">?restaurant dist calc load</div><br>
+        <span class="resModalSpan">Description:</span>
+        <div class="resModalLoadField">?restaurant's own yelp description load</div><br>
+      </div>
+      <footer class="resModalFoot">
+        <span>Include link here to yelp reviews? Since we're using their data I'm sure they'll make us</span>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<footer id="foot1" class="pageFooter">
+</footer>
+</body>
+</html>
